@@ -1,5 +1,4 @@
-#!/bin/bash 
-
+#!/bin/bash  
 # Immediately quit if an error occurs 
 set -e
 
