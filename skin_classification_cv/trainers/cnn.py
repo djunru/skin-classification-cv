@@ -66,13 +66,12 @@ if __name__ == "__main__":
     # Initialize the model
     model = SimpleCNN()
 
-    # Define the loss function and optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Training loop
     num_epochs = 10
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda")
     model.to(device)
     
 
